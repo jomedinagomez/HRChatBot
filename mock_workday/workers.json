@@ -1,0 +1,28 @@
+[
+  {
+    "id": "4b1c0f2e9d8a4c7f8e6b5a3d2c1b0a91",
+    "descriptor": "Maria Lopez",
+    "workerId": "21001",
+    "primaryWorkEmail": "maria.lopez@contoso.com",
+    "businessTitle": "Benefits Specialist",
+    "isManager": false,
+    "primarySupervisoryOrganization": {
+      "id": "7d2e4f6a8b0c4d1e9f3a5b7c9d1e3f50",
+      "descriptor": "HR Operations (David Chen)"
+    },
+    "location": { "descriptor": "New York, NY" }
+  },
+  {
+    "id": "9e8d7c6b5a4f4e3d2c1b0a9f8e7d6c52",
+    "descriptor": "David Chen",
+    "workerId": "21002",
+    "primaryWorkEmail": "david.chen@contoso.com",
+    "businessTitle": "HR Operations Manager",
+    "isManager": true,
+    "primarySupervisoryOrganization": {
+      "id": "1a3c5e7f9b2d4f6a8c0e2a4c6e8a0c13",
+      "descriptor": "People Services (Priya Natarajan)"
+    },
+    "location": { "descriptor": "Philadelphia, PA" }
+  }
+]

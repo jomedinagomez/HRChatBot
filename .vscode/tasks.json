@@ -1,0 +1,65 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "1. Terraform: deploy the Azure resources",
+			"type": "shell",
+			"command": "terraform -chdir=infra init; terraform -chdir=infra apply",
+			"problemMatcher": []
+		},
+		{
+			"label": "2. Notebook 00: publish the mock Workday",
+			"type": "shell",
+			"command": ".\\.venv\\Scripts\\ipython.exe notebooks\\00_publish_mock_workday.ipynb",
+			"problemMatcher": []
+		},
+		{
+			"label": "3. Notebook 01: process the PDFs",
+			"type": "shell",
+			"command": ".\\.venv\\Scripts\\ipython.exe notebooks\\01_process_pdfs.ipynb",
+			"problemMatcher": []
+		},
+		{
+			"label": "4. Notebook 02: create the index",
+			"type": "shell",
+			"command": ".\\.venv\\Scripts\\ipython.exe notebooks\\02_create_index.ipynb",
+			"problemMatcher": []
+		},
+		{
+			"label": "5. Notebook 03: populate and test the index",
+			"type": "shell",
+			"command": ".\\.venv\\Scripts\\ipython.exe notebooks\\03_populate_and_test_index.ipynb",
+			"problemMatcher": []
+		},
+		{
+			"label": "6. Power Platform CLI: sign in to your tenant",
+			"type": "shell",
+			"command": "pac auth create --name hr-demo --environment https://org945323b5.crm.dynamics.com --deviceCode; pac auth select --name hr-demo; pac auth list",
+			"problemMatcher": []
+		},
+		{
+			"label": "7. Notebook 04: deploy the Copilot Studio agent",
+			"type": "shell",
+			"command": ".\\.venv\\Scripts\\ipython.exe notebooks\\04_deploy_copilot_studio.ipynb",
+			"problemMatcher": []
+		},
+		{
+			"label": "Mock Workday: make me a manager",
+			"type": "shell",
+			"command": "pwsh -NoProfile -File mock_workday\\set-role.ps1 manager",
+			"problemMatcher": []
+		},
+		{
+			"label": "Mock Workday: make me an employee",
+			"type": "shell",
+			"command": "pwsh -NoProfile -File mock_workday\\set-role.ps1 employee",
+			"problemMatcher": []
+		},
+		{
+			"label": "Terraform: destroy everything",
+			"type": "shell",
+			"command": "terraform -chdir=infra destroy",
+			"problemMatcher": []
+		}
+	]
+}

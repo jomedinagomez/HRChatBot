@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "connectionParameters": {
+      "token": {
+        "type": "oauthSetting",
+        "oAuthSettings": {
+          "identityProvider": "aad",
+          "clientId": "<CONNECTOR_APP_ID>",
+          "scopes": ["api://<WORKDAY_API_APP_ID>/Workers.Read"],
+          "redirectMode": "GlobalPerConnector",
+          "properties": {
+            "IsFirstParty": "False",
+            "AzureActiveDirectoryResourceId": "api://<WORKDAY_API_APP_ID>",
+            "IsOnbehalfofLoginSupported": true
+          },
+          "customParameters": {
+            "loginUri": { "value": "https://login.windows.net" },
+            "tenantId": { "value": "<TENANT_ID>" },
+            "resourceUri": { "value": "api://<WORKDAY_API_APP_ID>" },
+            "enableOnbehalfOfLogin": { "value": "true" }
+          }
+        }
+      },
+      "token:TenantId": {
+        "type": "string",
+        "metadata": { "sourceType": "AzureActiveDirectoryTenant" },
+        "uiDefinition": { "constraints": { "required": "false", "hidden": "true" } }
+      }
+    },
+    "iconBrandColor": "#005cb9",
+    "capabilities": [],
+    "scriptOperations": null,
+    "publisher": "HR search demo",
+    "stackOwner": "HR search demo"
+  }
+}

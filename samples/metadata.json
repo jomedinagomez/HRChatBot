@@ -1,0 +1,352 @@
+[
+  {
+    "document_id": "HR-204",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Meridian_Nationwide Paid Sick Leave Policy Final.pdf",
+    "file_name": "Meridian_Nationwide Paid Sick Leave Policy Final.pdf",
+    "title": "Nationwide Paid Sick Leave Policy",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=1200&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Meridian_Nationwide Paid Sick Leave Policy Final.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "Rev. 4"
+  },
+  {
+    "document_id": "HR-210",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Flexible PTO Program.pdf",
+    "file_name": "Flexible PTO Program.pdf",
+    "title": "Flexible Paid Time Off Program",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=7060&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Flexible PTO Program.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-time-off",
+    "revision": "Rev. 3"
+  },
+  {
+    "document_id": "HR-118",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Colleague Privacy Notice.pdf",
+    "file_name": "Colleague Privacy Notice.pdf",
+    "title": "Colleague Privacy Notice",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=1041&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Colleague Privacy Notice.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "privacy",
+    "revision": "Rev. 2"
+  },
+  {
+    "document_id": "HR-101",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Code of Conduct.pdf",
+    "file_name": "Code of Conduct.pdf",
+    "title": "Code of Conduct",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=1330&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Code of Conduct.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "conduct",
+    "revision": "Rev. 6"
+  },
+  {
+    "document_id": "HR-162",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Hybrid and Remote Work Policy.pdf",
+    "file_name": "Hybrid and Remote Work Policy.pdf",
+    "title": "Hybrid and Remote Work Policy",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=1822&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Hybrid and Remote Work Policy.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "workplace",
+    "revision": "Rev. 2"
+  },
+  {
+    "document_id": "FIN-402",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Travel and Expense Policy.pdf",
+    "file_name": "Travel and Expense Policy.pdf",
+    "title": "Travel and Expense Policy",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=3851&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Travel and Expense Policy.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "finance",
+    "revision": "Rev. 9"
+  },
+  {
+    "document_id": "PH-INDEX",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/HR Policy _Table of Contents.pdf",
+    "file_name": "HR Policy _Table of Contents.pdf",
+    "title": "HR Policy Table of Contents",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=5882&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/HR Policy _Table of Contents.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "reference",
+    "revision": "Current"
+  },
+  {
+    "document_id": "HR-204-NY",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/New York.pdf",
+    "file_name": "New York.pdf",
+    "title": "New York Paid Sick Leave Supplement",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=6462&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/New York.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "Rev. 3",
+    "parent_document_id": "HR-204"
+  },
+  {
+    "document_id": "HR-204-ME",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Maine.pdf",
+    "file_name": "Maine.pdf",
+    "title": "Maine Earned Paid Leave Supplement",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=3014&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Maine.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "Rev. 2",
+    "parent_document_id": "HR-204"
+  },
+  {
+    "document_id": "HR-204-CO",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Colorado.pdf",
+    "file_name": "Colorado.pdf",
+    "title": "Colorado Healthy Families and Workplaces Supplement",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=5034&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Colorado.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "Rev. 3",
+    "parent_document_id": "HR-204"
+  },
+  {
+    "document_id": "HR-204-SEA",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Seattle.pdf",
+    "file_name": "Seattle.pdf",
+    "title": "Seattle Paid Sick and Safe Time Supplement",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=477&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Seattle.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "Rev. 2",
+    "parent_document_id": "HR-204"
+  },
+  {
+    "document_id": "HR-204-PHL",
+    "file": "documents/domain=hr_chatbot/src=policy_hub/persona=non-manager/Philadelphia.pdf",
+    "file_name": "Philadelphia.pdf",
+    "title": "Philadelphia Promoting Healthy Families and Workplaces Supplement",
+    "url": "https://meridian.policyhub.com/PolicyHub/DocumentViewer.aspx?Document=8225&ResolveRevision=1&Redirect=1&PolicyViewType=Hyperlink",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=policy_hub/persona=non-manager/Philadelphia.pdf",
+    "content_source": "Policy_Hub",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "Rev. 1",
+    "parent_document_id": "HR-204"
+  },
+  {
+    "document_id": "KB0010514",
+    "file": "documents/domain=hr_chatbot/src=people_central/persona=non-manager/Performance_Management_Global_KB0010514.pdf",
+    "file_name": "Performance_Management_Global_KB0010514.pdf",
+    "title": "Performance Management: What to Expect as a Colleague",
+    "url": "https://meridianexternal.service-now.com/hrportal?id=kb_article_view&sys_kb_id=453c86e90e0eb760f9c70c51478b07f9",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=people_central/persona=non-manager/Performance_Management_Global_KB0010514.pdf",
+    "content_source": "PeopleCentral",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "performance",
+    "revision": "v4"
+  },
+  {
+    "document_id": "KB0010537",
+    "file": "documents/domain=hr_chatbot/src=people_central/persona=manager/Performance_Management_Global_MGR_KB0010537.pdf",
+    "file_name": "Performance_Management_Global_MGR_KB0010537.pdf",
+    "title": "Performance Calibration: Manager Preparation Guide",
+    "url": "https://meridianexternal.service-now.com/hrportal?id=kb_article_view&sys_kb_id=bdec6a8f8ceea638bd36358f3731ca81",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=people_central/persona=manager/Performance_Management_Global_MGR_KB0010537.pdf",
+    "content_source": "PeopleCentral",
+    "persona": "Manager",
+    "group_ids": [
+      "managers"
+    ],
+    "policy_family": "performance",
+    "revision": "v7"
+  },
+  {
+    "document_id": "KB0010779",
+    "file": "documents/domain=hr_chatbot/src=people_central/persona=manager/Employee_Relations_Managers_Toolkit_US_MGR_KB0010779.pdf",
+    "file_name": "Employee_Relations_Managers_Toolkit_US_MGR_KB0010779.pdf",
+    "title": "Employee Relations Toolkit for Managers (U.S.)",
+    "url": "https://meridianexternal.service-now.com/hrportal?id=kb_article_view&sys_kb_id=974421677eb7cdea86a6e185bb80b9b2",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=people_central/persona=manager/Employee_Relations_Managers_Toolkit_US_MGR_KB0010779.pdf",
+    "content_source": "PeopleCentral",
+    "persona": "Manager",
+    "group_ids": [
+      "managers"
+    ],
+    "policy_family": "employee-relations",
+    "revision": "v3"
+  },
+  {
+    "document_id": "KB0011204",
+    "file": "documents/domain=hr_chatbot/src=people_central/persona=non-manager/How_To_Request_Leave_Of_Absence_KB0011204.pdf",
+    "file_name": "How_To_Request_Leave_Of_Absence_KB0011204.pdf",
+    "title": "How to request a leave of absence",
+    "url": "https://meridianexternal.service-now.com/hrportal?id=kb_article_view&sys_kb_id=37537a24e68ec98d718dbd87a71d3a7f",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=people_central/persona=non-manager/How_To_Request_Leave_Of_Absence_KB0011204.pdf",
+    "content_source": "PeopleCentral",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "leave-of-absence",
+    "revision": "v6"
+  },
+  {
+    "document_id": "KB0011330",
+    "file": "documents/domain=hr_chatbot/src=people_central/persona=non-manager/Workday_Time_Off_Balances_KB0011330.pdf",
+    "file_name": "Workday_Time_Off_Balances_KB0011330.pdf",
+    "title": "Workday navigation: finding your time off balance",
+    "url": "https://meridianexternal.service-now.com/hrportal?id=kb_article_view&sys_kb_id=40d0aa4d220c842b50a294f32328aed9",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=people_central/persona=non-manager/Workday_Time_Off_Balances_KB0011330.pdf",
+    "content_source": "PeopleCentral",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "systems",
+    "revision": "v2"
+  },
+  {
+    "document_id": "KB0011402",
+    "file": "documents/domain=hr_chatbot/src=people_central/persona=non-manager/New_Hire_Onboarding_Checklist_KB0011402.pdf",
+    "file_name": "New_Hire_Onboarding_Checklist_KB0011402.pdf",
+    "title": "New colleague onboarding checklist: first 30 days",
+    "url": "https://meridianexternal.service-now.com/hrportal?id=kb_article_view&sys_kb_id=6bad443c71cf391e8aff4a74a0c8c8c7",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=people_central/persona=non-manager/New_Hire_Onboarding_Checklist_KB0011402.pdf",
+    "content_source": "PeopleCentral",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "onboarding",
+    "revision": "v5"
+  },
+  {
+    "document_id": "SP-QA",
+    "file": "documents/domain=hr_chatbot/src=sharepoint/persona=non-manager/HR Quick Answers.pdf",
+    "file_name": "HR Quick Answers.pdf",
+    "title": "HR quick answers",
+    "url": "https://meridianfg.sharepoint.com/sites/HRConnect/HR%20Help/HR%20Quick%20Answers.pdf",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=sharepoint/persona=non-manager/HR Quick Answers.pdf",
+    "content_source": "SharePoint",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "scripted-answers",
+    "revision": "v18"
+  },
+  {
+    "document_id": "SP-BEN-FAQ",
+    "file": "documents/domain=hr_chatbot/src=sharepoint/persona=non-manager/Benefits FAQ.pdf",
+    "file_name": "Benefits FAQ.pdf",
+    "title": "Benefits questions we get every week",
+    "url": "https://meridianfg.sharepoint.com/sites/HRConnect/Benefits/Benefits%20FAQ.pdf",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=sharepoint/persona=non-manager/Benefits FAQ.pdf",
+    "content_source": "SharePoint",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "benefits",
+    "revision": "v12"
+  },
+  {
+    "document_id": "SP-MGR-CARD",
+    "file": "documents/domain=hr_chatbot/src=sharepoint/persona=manager/Manager Quick Card - Approving Time Away.pdf",
+    "file_name": "Manager Quick Card - Approving Time Away.pdf",
+    "title": "Manager quick card: approving time away",
+    "url": "https://meridianfg.sharepoint.com/sites/HRConnect/Manager%20hub/Manager%20Quick%20Card%20-%20Approving%20Time%20Away.pdf",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=sharepoint/persona=manager/Manager Quick Card - Approving Time Away.pdf",
+    "content_source": "SharePoint",
+    "persona": "Manager",
+    "group_ids": [
+      "managers"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "v3"
+  },
+  {
+    "document_id": "SP-PERF-MEMO",
+    "file": "documents/domain=hr_chatbot/src=sharepoint/persona=non-manager/Performance Cycle Dates Memo.pdf",
+    "file_name": "Performance Cycle Dates Memo.pdf",
+    "title": "Memo: performance cycle dates",
+    "url": "https://meridianfg.sharepoint.com/sites/HRConnect/Talent/Performance%20Cycle%20Dates%20Memo.pdf",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=sharepoint/persona=non-manager/Performance Cycle Dates Memo.pdf",
+    "content_source": "SharePoint",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "performance",
+    "revision": "v1"
+  },
+  {
+    "document_id": "SP-ELIG",
+    "file": "documents/domain=hr_chatbot/src=sharepoint/persona=non-manager/Time Away Eligibility Matrix.pdf",
+    "file_name": "Time Away Eligibility Matrix.pdf",
+    "title": "Time away eligibility at a glance",
+    "url": "https://meridianfg.sharepoint.com/sites/HRConnect/Benefits/Time%20Away%20Eligibility%20Matrix.pdf",
+    "s3_uri": "s3://edp-km-hrchatbot-demo-us-west-2/domain=hr_chatbot/src=sharepoint/persona=non-manager/Time Away Eligibility Matrix.pdf",
+    "content_source": "SharePoint",
+    "persona": "Non-Manager",
+    "group_ids": [
+      "all-employees"
+    ],
+    "policy_family": "paid-sick-leave",
+    "revision": "v6"
+  }
+]

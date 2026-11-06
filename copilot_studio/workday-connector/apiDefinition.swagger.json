@@ -1,0 +1,51 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Workday (mock)",
+    "description": "Stands in for the Workday connector: returns the signed-in user's worker record. Authenticates with Microsoft Entra ID on behalf of the user.",
+    "version": "1.0"
+  },
+  "host": "<WORKDAY_MOCK_HOST>",
+  "basePath": "/api",
+  "schemes": ["https"],
+  "consumes": [],
+  "produces": ["application/json"],
+  "paths": {
+    "/workers/me": {
+      "get": {
+        "operationId": "GetMyWorker",
+        "summary": "Get Profile",
+        "description": "Returns the signed-in user's worker record, including whether they are a manager.",
+        "responses": {
+          "200": {
+            "description": "The signed-in user's worker record.",
+            "schema": { "$ref": "#/definitions/Worker" }
+          },
+          "404": { "description": "Workday has no worker record for the signed-in user." }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Worker": {
+      "type": "object",
+      "properties": {
+        "workerId": { "type": "string", "x-ms-summary": "Worker ID" },
+        "descriptor": { "type": "string", "x-ms-summary": "Name" },
+        "businessTitle": { "type": "string", "x-ms-summary": "Business title" },
+        "primaryWorkEmail": { "type": "string", "x-ms-summary": "Work email" },
+        "isManager": { "type": "boolean", "x-ms-summary": "Is manager" }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "oauth2-auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+      "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
+      "scopes": {}
+    }
+  },
+  "security": [{ "oauth2-auth": [] }]
+}

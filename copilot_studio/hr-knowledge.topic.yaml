@@ -1,0 +1,73 @@
+# HR knowledge search: the flow from the meeting, in one topic. Runs every time
+# the agent needs knowledge:
+#   1. Workday (mock) Get Profile, called on behalf of the signed-in user: the
+#      connector exchanges their Microsoft Entra token for one for the Workday API (OBO),
+#      and Workday reads who they are from it.
+#   2. isManager becomes the security filter: managers also see manager-only documents.
+#   3. The HR index is searched with that filter; Copilot Studio writes the answer
+#      and the citations from the results.
+# No keys: Workday gets the user's token; Search uses the maker's Entra ID connection.
+#
+# notebooks/04_deploy_copilot_studio.ipynb fills in <AGENT_SCHEMA> and <SEARCH_INDEX>.
+kind: AdaptiveDialog
+modelDescription: Looks up the signed-in user in Workday and searches the HR policy index for every knowledge request, returning only the documents their persona is allowed to read.
+beginDialog:
+  kind: OnKnowledgeRequested
+  id: main
+  actions:
+    - kind: InvokeConnectorAction
+      id: invokeConnector_wdMe4x
+      displayName: Workday (mock) - Get Profile
+      connectionReference: <AGENT_SCHEMA>.workday-mock.get-profile
+      connectionProperties:
+        mode: Invoker
+      operationId: GetMyWorker
+      # Someone Workday doesn't know (404) or a failed call counts as not a manager.
+      errorHandling:
+        kind: ContinueOnErrorBehavior
+        statusCode: Topic.WorkdayStatus
+        errorResponseBody: Topic.WorkdayError
+      output:
+        kind: SingleVariableOutputBinding
+        variable: Topic.Worker
+
+    - kind: InvokeConnectorAction
+      id: invokeConnector_hrSrch7
+      displayName: Search the HR index
+      connectionReference: <AGENT_SCHEMA>.shared_azureaisearch.hr-search
+      connectionProperties:
+        mode: Maker
+      operationId: SemanticHybridSearch
+      input:
+        binding:
+          indexName: <SEARCH_INDEX>
+          searchText: =System.SearchQuery
+          vectorizedSearchFields: =["content_vector"]
+          semanticConfiguration: hr-semantic
+          selectFields: =["title", "content", "url"]
+          # Built from Workday's answer only, never from the user's message.
+          filterCondition: |-
+            ="group_ids/any(g: search.in(g, '" & If(Topic.Worker.isManager = true, "all-employees|managers", "all-employees") & "', '|'))"
+          nearestNeighbors: 50
+          top: 10
+      dynamicOutputSchema:
+        kind: Table
+        properties:
+          title: String
+          content: String
+          url: String
+      output:
+        kind: SingleVariableOutputBinding
+        variable: Topic.SearchResults
+
+    # The citations: Copilot Studio writes the answer from Content and cites each
+    # result by its Title, linking to its ContentLocation (here, the url field).
+    - kind: SetVariable
+      id: setVariable_hrRslt4
+      variable: System.SearchResults
+      value: |-
+        =ForAll(Topic.SearchResults,
+          { Content: ThisRecord.content, ContentLocation: ThisRecord.url, Title: ThisRecord.title })
+
+inputType: {}
+outputType: {}
